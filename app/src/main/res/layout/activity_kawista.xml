@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kawista">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="281dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kawis" />
+
+    <TextView
+        android:id="@+id/nama_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Buah Kawista"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Rp 30.000"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#FF2E9E33"
+        app:layout_constraintStart_toStartOf="@+id/nama_m"
+        app:layout_constraintTop_toBottomOf="@+id/nama_m" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Jumlah Beli"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/input_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btn_beli"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Beli"
+        android:background="#FF2E9E33"
+        android:textColor="#fff"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="@+id/input_jumlah"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_jumlah"
+        app:layout_constraintTop_toBottomOf="@+id/input_jumlah" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
